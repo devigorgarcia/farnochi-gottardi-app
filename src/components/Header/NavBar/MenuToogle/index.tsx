@@ -10,7 +10,7 @@ interface IMenuOpenProps {
 export const MenuToggle = ({ isOpen, toggle }: IMenuOpenProps) => {
   return (
     <>
-      <Box onClick={toggle} display={{ base: "block", md: "none" }}>
+      <Box onClick={toggle} display={{ base: "block", lg: "none" }}>
         {isOpen ? (
           <IoMdClose size={"30px"} cursor="pointer" />
         ) : (

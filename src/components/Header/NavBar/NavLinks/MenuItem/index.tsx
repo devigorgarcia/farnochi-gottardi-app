@@ -25,58 +25,46 @@ export const MenuItem = ({
       {isOpen ? (
         <Link
           onClick={() => setIsOpen(false)}
-          _hover={{}}
+          _hover={{ _after: { w: "100%" } }}
           href={to}
           width="100%"
+          p="10px 0"
+          textTransform={"uppercase"}
+          pos="relative"
+          _after={{
+            content: `""`,
+            position: "absolute",
+            bg: "#958E86",
+            h: "3px",
+            w: "0%",
+            left: 0,
+            bottom: "0",
+            transition: "0.3s",
+          }}
         >
-          <ChakraBox
-            as={motion.div}
-            whileHover={{
-              borderBottom: "2px solid #A66D6D",
-              fontWeight: "600",
-            }}
-            transition="0.1s ease-in-out"
-          >
-            <Text
-              textAlign={["left", "left", "center", "center"]}
-              display={"flex"}
-              _hover={{ color: "#A66D6D" }}
-              color="#003400"
-              alignItems="center"
-              align={"center"}
-              fontSize={["18px", "17px"]}
-              gap="2"
-              {...rest}
-            >
-              {children}
-            </Text>
-          </ChakraBox>
+          {children}
         </Link>
       ) : (
-        <ChakraBox
-          as={motion.div}
-          whileHover={{
-            borderBottom: "2px solid #A66D6D",
-            fontWeight: "600",
+        <Link
+          onClick={() => setIsOpen(false)}
+          _hover={{ _after: { w: "100%" } }}
+          href={to}
+          p="5px 0"
+          textTransform={"uppercase"}
+          pos="relative"
+          _after={{
+            content: `""`,
+            position: "absolute",
+            bg: "#958E86",
+            h: "3px",
+            w: "0%",
+            left: 0,
+            bottom: "0",
+            transition: "0.4s",
           }}
-          transition="0.2s ease"
         >
-          <Link onClick={() => setIsOpen(false)} href={to} _hover={{}}>
-            <Text
-              textAlign={["left", "left", "center", "center"]}
-              display={"flex"}
-              alignItems="center"
-              align={"center"}
-              fontSize={["18px", "17px"]}
-              gap="2"
-              textTransform={"uppercase"}
-              _hover={{ color: "#A66D6D" }}
-              {...rest}
-            >
-              {children}
-            </Text>
-          </Link>
-        </ChakraBox>
+          {children}
+        </Link>
       )}
     </>
   );

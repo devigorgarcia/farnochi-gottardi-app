@@ -43,7 +43,9 @@ export const Header = () => {
               bgImage={`url(${header2})`}
               bgPos="center"
               bgSize="cover"
-            ></Flex>
+            >
+              ""
+            </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex
@@ -54,7 +56,9 @@ export const Header = () => {
               bgImage={`url(${header3})`}
               bgPos="center"
               bgSize="cover"
-            ></Flex>
+            >
+              ""
+            </Flex>
           </SwiperSlide>
         </Swiper>
       </Flex>

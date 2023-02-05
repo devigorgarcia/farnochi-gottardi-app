@@ -11,14 +11,14 @@ export const NavLinks = ({ isOpen, setIsOpen }: INavLinksProps) => {
   return (
     <Flex
       mt="1rem"
-      display={{ base: isOpen ? "block" : "none", md: "block" }}
-      flexBasis={{ base: "100%", md: "auto" }}
+      display={{ base: isOpen ? "block" : "none", lg: "block" }}
+      flexBasis={{ base: "100%", lg: "auto" }}
     >
-      <Stack
-        spacing={{ sm: "1rem" }}
-        align={["flex-start", "flex-start", "center"]}
-        justify={["center", "space-between", "flex-end", "flex-end"]}
-        direction={["column", "column", "row", "row"]}
+      <Flex
+        w="100%"
+        flexDir={{ base: "column", lg: "row" }}
+        gap={{ base: "0", lg: "2rem" }}
+        justify="center"
       >
         <MenuItem setIsOpen={setIsOpen} isOpen={isOpen} to="#">
           Inicio
@@ -35,7 +35,7 @@ export const NavLinks = ({ isOpen, setIsOpen }: INavLinksProps) => {
         <MenuItem setIsOpen={setIsOpen} isOpen={isOpen} to="#contact">
           Contato
         </MenuItem>
-      </Stack>
+      </Flex>
     </Flex>
   );
 };

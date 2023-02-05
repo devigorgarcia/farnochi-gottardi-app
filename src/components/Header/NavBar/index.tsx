@@ -23,7 +23,7 @@ export const NavBar = () => {
       ]}
       wrap="wrap"
       w="100%"
-      h={"100%"}
+      h="100%"
       p={["1rem 3rem"]}
       boxShadow="0px 3px 8px 0px rgba(0,0,0,0.2)"
       position="sticky"
