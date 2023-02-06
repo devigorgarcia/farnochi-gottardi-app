@@ -16,19 +16,21 @@ export const MenuItem = ({
   isOpen,
   ...rest
 }: IMenuLinksProps) => {
-  const ChakraBox = chakra(motion.div, {
-    shouldForwardProp: (prop: any) =>
-      isValidMotionProp(prop) || shouldForwardProp(prop),
-  });
   return (
     <>
       {isOpen ? (
         <Link
           onClick={() => setIsOpen(false)}
-          _hover={{ _after: { w: "100%" } }}
+          _hover={{
+            fontWeight: "bold",
+            color: "#958E86",
+            _after: { w: "100%" },
+          }}
           href={to}
           width="100%"
           p="10px 0"
+          fontFamily={"PT Serif, serif"}
+          color="#312B4B"
           textTransform={"uppercase"}
           pos="relative"
           _after={{
@@ -47,11 +49,12 @@ export const MenuItem = ({
       ) : (
         <Link
           onClick={() => setIsOpen(false)}
-          _hover={{ _after: { w: "100%" } }}
+          _hover={{ _after: { w: "100%" }, color: "#958E86" }}
           href={to}
           p="5px 0"
           textTransform={"uppercase"}
           pos="relative"
+          color="#312B4B"
           _after={{
             content: `""`,
             position: "absolute",
