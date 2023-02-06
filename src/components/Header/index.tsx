@@ -38,22 +38,7 @@ export const Header = () => {
                 w="60%"
                 pos="absolute"
                 bottom="20"
-              >
-                <Text
-                  alignSelf={"flex-end"}
-                  w="350px"
-                  textAlign={"justify"}
-                  fontFamily={"Inter"}
-                  fontWeight="500"
-                  bg="#0000007a"
-                  p="1rem"
-                  rounded="10px"
-                >
-                  Construir com seriedade e respeito. Uma formação de
-                  experientes profissionais que oferecem ao mercado um singular
-                  valor: <strong> Resultado!</strong>
-                </Text>
-              </Flex>
+              ></Flex>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
@@ -76,22 +61,7 @@ export const Header = () => {
                 pos="absolute"
                 bottom="20"
                 right="0"
-              >
-                <Text
-                  alignSelf={"flex-end"}
-                  w="350px"
-                  textAlign={"justify"}
-                  fontFamily={"Inter"}
-                  fontWeight="500"
-                  bg="#0000007a"
-                  p="1rem"
-                  rounded="10px"
-                >
-                  Construir com seriedade e respeito. Uma formação de
-                  experientes profissionais que oferecem ao mercado um singular
-                  valor: <strong> Resultado!</strong>
-                </Text>
-              </Flex>
+              ></Flex>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>

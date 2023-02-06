@@ -9,4 +9,19 @@ export const Theme = extendTheme({
       900: "#312B4B",
     },
   },
+  components: {
+    Button: {
+      variants: {
+        solid: {
+          _hover: {
+            bg: "#958E86",
+          },
+        },
+      },
+    },
+  },
+  fonts: {
+    heading: "Montserrat",
+    body: "Open Sans",
+  },
 });

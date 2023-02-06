@@ -1,32 +1,35 @@
 import { Flex } from "@chakra-ui/react";
-
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  MoveOut,
-} from "react-scroll-motion";
 import { Header } from "../../components/Header";
+import { Projects } from "../../components/Projects";
 import { Services } from "../../components/Services";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 
 export const HomePage = () => {
   return (
-    <Flex flexDir={"column"}>
-      <ScrollContainer>
-        <ScrollPage>
-          <Animator animation={(batch(Fade()), MoveOut(0, -200))}>
-            <Header />
-          </Animator>
-        </ScrollPage>
-        <ScrollPage style={{ height: "100%" }}>
-          <Animator animation={batch(FadeIn())}>
-            <Services />
-          </Animator>
-        </ScrollPage>
-      </ScrollContainer>
+    <Flex
+      flexDir={"column"}
+      gap="1rem"
+      css={{
+        "&::-webkit-scrollbar": {
+          width: "4px",
+        },
+        "&::-webkit-scrollbar-track": {
+          width: "6px",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: "white",
+          borderRadius: "10px",
+        },
+      }}
+    >
+      <Header />
+      <AnimationOnScroll animateIn="animate__fadeIn">
+        <Services />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__fadeIn">
+        <Projects />
+      </AnimationOnScroll>
     </Flex>
   );
 };
