@@ -40,7 +40,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <Box bg="#4E4E4E" color="white" p="3rem">
+    <Box bg="#211D1E" color="white" p="3rem">
       <Container maxW={"6xl"}>
         <Flex flexDir={{ base: "column" }} gap="1rem">
           <Heading textTransform={"uppercase"} fontFamily={"Montserrat"}>

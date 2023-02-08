@@ -13,7 +13,6 @@ import "swiper/css";
 export const Header = () => {
   return (
     <Box>
-      <NavBar />
       <Flex h="100vh" w="100%" pos="relative">
         <Swiper
           modules={[Autoplay, EffectFade]}
