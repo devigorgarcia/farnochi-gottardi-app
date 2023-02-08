@@ -8,6 +8,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import "animate.css/animate.min.css";
 import { NewProject } from "../../components/NewProject";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Contact } from "../../components/Contact";
 
 export const HomePage = () => {
   return (
@@ -16,7 +17,7 @@ export const HomePage = () => {
       <Flex flexDir={"column"} gap="1rem">
         <Header />
         <AnimationOnScroll animateIn="animate__fadeIn">
-        <Services />
+          <Services />
         </AnimationOnScroll>
         <ParallaxBanner
           style={{ aspectRatio: "1/1", height: "50vh" }}
@@ -32,6 +33,9 @@ export const HomePage = () => {
         <NewProject />
         <AnimationOnScroll animateIn="animate__fadeIn">
           <Projects />
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__backInLeft">
+          <Contact />
         </AnimationOnScroll>
       </Flex>
     </>
