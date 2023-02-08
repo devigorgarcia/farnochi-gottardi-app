@@ -67,16 +67,16 @@ export const Contact = () => {
         >
           <Flex align={"center"} justify="center" gap="0.5rem">
             <BsWhatsapp size={"30px"} />
-            <VStack spacing={-1} align="flex-start">
+            <VStack spacing={0} align="flex-start">
               <Text fontWeight="bold">WhatsApp</Text>
               <Text fontSize={"12px"}>(16) 3442-4520</Text>
             </VStack>
           </Flex>
           <Flex align={"center"} gap="0.5rem">
             <MdOutlineMailOutline size={"38px"} />
-            <VStack spacing={-1} align="flex-start">
+            <VStack spacing={0} align="flex-start">
               <Text fontWeight="bold">E-mail</Text>
-              <Text fontSize={"12px"}>nutri.fermartins@outlook.com</Text>
+              <Text fontSize={"12px"}>fernando@farnochiengenharia.com.br</Text>
             </VStack>
           </Flex>
         </Flex>
