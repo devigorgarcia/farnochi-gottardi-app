@@ -6,6 +6,8 @@ import { NavBar } from "../../components/Header/NavBar";
 import { Hero } from "../../components/Hero";
 import { ParallaxBanner } from "react-scroll-parallax";
 import "animate.css/animate.min.css";
+import { NewProject } from "../../components/NewProject";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const HomePage = () => {
   return (
@@ -13,11 +15,11 @@ export const HomePage = () => {
       <NavBar />
       <Flex flexDir={"column"} gap="1rem">
         <Header />
-        {/* <AnimationOnScroll animateIn="animate__fadeIn"> */}
+        <AnimationOnScroll animateIn="animate__fadeIn">
         <Services />
-        {/* </AnimationOnScroll> */}
+        </AnimationOnScroll>
         <ParallaxBanner
-          style={{ aspectRatio: "2/1", height: "100vh" }}
+          style={{ aspectRatio: "1/1", height: "50vh" }}
           layers={[
             {
               image:
@@ -27,10 +29,10 @@ export const HomePage = () => {
             { children: <Hero /> },
           ]}
         />
-
-        {/* <AnimationOnScroll animateIn="animate__fadeIn"> */}
-        <Projects />
-        {/* </AnimationOnScroll> */}
+        <NewProject />
+        <AnimationOnScroll animateIn="animate__fadeIn">
+          <Projects />
+        </AnimationOnScroll>
       </Flex>
     </>
   );
