@@ -1,6 +1,6 @@
-import { Flex, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import { Flex, Heading, Text, VStack } from "@chakra-ui/react";
 
-import { BsWhatsapp } from "react-icons/bs";
+import { AiOutlinePhone } from "react-icons/ai";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { FormContact } from "./FormContact";
@@ -59,16 +59,16 @@ export const Contact = () => {
         </Text>
         <FormContact />
         <Flex
-          maxW="500px"
-          w="100%"
-          flexDir={{ base: "column", lg: "row" }}
+          w="70%"
+          flexDir={{ base: "column", md: "row" }}
           align="flex-start"
-          gap="1rem"
+          justify={'center'}
+          gap="2rem"
         >
           <Flex align={"center"} justify="center" gap="0.5rem">
-            <BsWhatsapp size={"30px"} />
+            <AiOutlinePhone size={"30px"} />
             <VStack spacing={0} align="flex-start">
-              <Text fontWeight="bold">WhatsApp</Text>
+              <Text fontWeight="bold">Telefone</Text>
               <Text fontSize={"12px"}>(16) 3442-4520</Text>
             </VStack>
           </Flex>

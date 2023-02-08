@@ -9,6 +9,7 @@ import "animate.css/animate.min.css";
 import { NewProject } from "../../components/NewProject";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Contact } from "../../components/Contact";
+import { Footer } from "../../components/Footer";
 
 export const HomePage = () => {
   return (
@@ -34,9 +35,10 @@ export const HomePage = () => {
         <AnimationOnScroll animateIn="animate__fadeIn">
           <Projects />
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__backInLeft">
+        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
           <Contact />
         </AnimationOnScroll>
+        <Footer />
       </Flex>
     </>
   );

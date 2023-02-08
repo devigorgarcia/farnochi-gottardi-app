@@ -60,7 +60,7 @@ export const FormContact = () => {
       display="flex"
       flexDir={"column"}
       as="form"
-      gap='0.7rem'
+      gap='1.5rem'
       maxW={"6xl"}
       onSubmit={handleSubmit(onSubmit)}
     >
